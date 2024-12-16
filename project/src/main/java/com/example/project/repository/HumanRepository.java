@@ -5,10 +5,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 
-@Repository
-public interface HumanRepository extends JpaRepository<Human, Integer> {
 
-    Human findById(int id);
+public interface HumanRepository extends JpaRepository<Human, Integer> {
 
     Human findByLogin(String login);
 
